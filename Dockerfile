@@ -31,7 +31,7 @@ RUN pip --no-cache-dir install \
         scikit-build
 
 RUN pip --no-cache-dir install \
-        cmake
+        cmake==3.17.0
 
 
 
