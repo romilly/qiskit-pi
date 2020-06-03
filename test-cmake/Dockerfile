@@ -8,4 +8,6 @@ RUN pip --no-cache-dir install packaging
 
 RUN pip --no-cache-dir install scikit-build
 
+RUN pip --no-cache-dirinstall wheel
+
 RUN pip --no-cache-dir install cmake
