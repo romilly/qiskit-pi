@@ -34,7 +34,7 @@ RUN pip --no-cache-dir install \
 # cmake
 
 RUN pip --no-cache-dir install \
-        pyscf
+        pyscf==1.4.5
 
 
 
