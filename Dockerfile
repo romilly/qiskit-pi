@@ -30,8 +30,11 @@ RUN pip --no-cache-dir install \
 RUN pip --no-cache-dir install \
         scikit-build
 
+RUN pip --no-cache-dir --upgrade install \
+        setuptools
+
 #RUN pip --no-cache-dir install \
-#        cmake
+# cmake
 
 
 
