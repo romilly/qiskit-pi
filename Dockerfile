@@ -17,3 +17,5 @@ RUN pip --no-cache-dir install \
         matplotlib ipykernel jupyter
 
 RUN wget https://static.rust-lang.org/dist/rust-nightly-armv7-unknown-linux-gnueabihf.tar.gz
+
+RUN tar -xvzf rust-nightly-armv7-unknown-linux-gnueabihf.tar.gz
