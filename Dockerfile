@@ -16,6 +16,6 @@ RUN  apt-get clean && \
 RUN pip --no-cache-dir install \
         matplotlib ipykernel jupyter
 
-ADD retworkx-0.3.4-cp37-cp37m-linux_armv7l.whl
+ADD retworkx-0.3.4-cp37-cp37m-linux_armv7l.whl .
 
 RUN pip install retworkx-0.3.4-cp37-cp37m-linux_armv7l.whl
