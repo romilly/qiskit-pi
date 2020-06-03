@@ -42,6 +42,9 @@ RUN pip --no-cache-dir install \
 RUN pip --no-cache-dir install \
         qiskit-terra
 
+RUN pip --no-cache-dir install \
+        qiskit-aer
+
 
 
 
