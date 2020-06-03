@@ -21,3 +21,5 @@ RUN wget https://static.rust-lang.org/dist/rust-nightly-armv7-unknown-linux-gnue
 RUN tar -xvzf rust-nightly-armv7-unknown-linux-gnueabihf.tar.gz
 
 RUN ./rust-nightly-armv7-unknown-linux-gnueabihf/install.sh
+
+RUN pip --no-cache-dir install retworkx
