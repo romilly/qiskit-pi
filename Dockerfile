@@ -49,6 +49,10 @@ RUN pip --no-cache-dir install \
         qiskit-ibmq-provider
 
 RUN pip --no-cache-dir install \
+        cmake==3.16.6
+
+
+RUN pip --no-cache-dir install \
         qiskit-aer
 
 
