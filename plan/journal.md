@@ -12,4 +12,7 @@ Getting going:
 1. ~~set it up as a private (for now) GitHub repo~~
 1. ~~give `quantum` access to my a/c on GitHub~~
 
+NB rust unistall script is at `/usr/local/lib/rustlib/uninstall.sh` in the docker image
+
+
 
