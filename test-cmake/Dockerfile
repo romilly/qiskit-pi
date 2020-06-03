@@ -10,4 +10,4 @@ RUN pip --no-cache-dir install scikit-build
 
 RUN pip --no-cache-dir install wheel
 
-RUN pip --no-cache-dir install cmake
+RUN pip --no-cache-dir install cmake==3.17.3
