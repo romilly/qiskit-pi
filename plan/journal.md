@@ -9,7 +9,7 @@ I've installed docker on `quantum` - the 8GB Pi 4.
  
 Getting going:
 1. ~~Create this project~~
-1. set it up as a private (for now) GitHub repo
-1. give `quantum` access to my a/c on GitHub
+1. ~~set it up as a private (for now) GitHub repo~~
+1. ~~give `quantum` access to my a/c on GitHub~~
 
 
