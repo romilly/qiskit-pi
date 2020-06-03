@@ -27,4 +27,12 @@ RUN pip --no-cache-dir install retworkx
 RUN pip --no-cache-dir install \
         cython numpy
 
+RUN pip --no-cache-dir install \
+        scikit-build
+
+RUN pip --no-cache-dir install \
+        cmake
+
+
+
 
