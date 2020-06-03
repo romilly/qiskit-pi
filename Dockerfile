@@ -39,6 +39,10 @@ RUN pip --no-cache-dir install \
         pyscf==1.4.5
 
 
+RUN pip --no-cache-dir install \
+        qiskit-terra
+
+
 
 
 
