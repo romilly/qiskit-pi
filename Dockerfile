@@ -43,6 +43,12 @@ RUN pip --no-cache-dir install \
         qiskit-terra
 
 RUN pip --no-cache-dir install \
+        qiskit-aqua
+
+RUN pip --no-cache-dir install \
+        qiskit-ibmq-provider
+
+RUN pip --no-cache-dir install \
         qiskit-aer
 
 
