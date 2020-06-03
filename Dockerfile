@@ -49,7 +49,7 @@ RUN pip --no-cache-dir install \
         qiskit-ibmq-provider
 
 RUN pip --no-cache-dir install \
-        cmake==3.16.6
+        cmake==3.15.3
 
 
 RUN pip --no-cache-dir install \
