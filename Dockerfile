@@ -25,6 +25,6 @@ RUN ./rust-nightly-armv7-unknown-linux-gnueabihf/install.sh
 RUN pip --no-cache-dir install retworkx
 
 RUN pip --no-cache-dir install \
-        cmake cython numpy
+        cython numpy
 
 
