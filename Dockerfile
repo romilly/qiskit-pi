@@ -30,7 +30,7 @@ RUN pip --no-cache-dir install \
 RUN pip --no-cache-dir install \
         scikit-build
 
-RUN pip --no-cache-dir -U install \
+RUN pip --no-cache-dir install \
         setuptools
 
 #RUN pip --no-cache-dir install \
