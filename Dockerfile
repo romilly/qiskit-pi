@@ -30,8 +30,10 @@ RUN pip --no-cache-dir install \
 RUN pip --no-cache-dir install \
         scikit-build
 
-#RUN pip --no-cache-dir install \
-# cmake
+RUN apt-get install -y --no-install-recommends libhdf5-100 libhdf5-dev
+
+RUN pip --no-cache-dir install \
+         h5py
 
 RUN pip --no-cache-dir install \
         pyscf==1.4.5
