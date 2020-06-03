@@ -30,7 +30,7 @@ RUN pip --no-cache-dir install \
 RUN pip --no-cache-dir install \
         scikit-build
 
-RUN apt-get update && apt-get install -y --no-install-recommends libhdf5-100 libhdf5-dev
+RUN apt-get update && apt-get install -y --no-install-recommends libhdf5-dev
 
 RUN pip --no-cache-dir install \
          h5py
