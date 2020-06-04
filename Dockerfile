@@ -56,6 +56,14 @@ RUN pip --no-cache-dir install \
 RUN pip --no-cache-dir install \
         qiskit-aer
 
+COPY notebooks /notebooks
+
+WORKDIR "/notebooks"
+
+EXPOSE 8888
+
+CMD [jupyter] [notebook]
+
 
 
 
