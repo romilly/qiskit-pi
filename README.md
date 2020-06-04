@@ -30,7 +30,7 @@ and I cannot get it to install locally. This may mean that some of the packages 
 
 ## License
 
-Both qiskit and this work are covered by the Apache License 2.0
+Both qiskit and this work are covered by the [Apache License 2.0](LICENSE.txt)
 
 You can find [qiskit on GitHib](https://github.com/Qiskit/qiskit)
 
