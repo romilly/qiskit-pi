@@ -56,13 +56,17 @@ RUN pip --no-cache-dir install \
 RUN pip --no-cache-dir install \
         qiskit-aer
 
+RUN pip --no-cache-dir install \
+        jupyter
+
+
 COPY notebooks /notebooks
 
 WORKDIR "/notebooks"
 
 EXPOSE 8888
 
-CMD [jupyter] [notebook]
+CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
 
 
 
