@@ -1,0 +1,25 @@
+# history from a successful installation of qiskit in a virtual environment on a Raspberry Pi
+
+sudo apt install gfortran libopenblas-dev
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source $HOME/.cargo/env
+rustup toolchain install nightly
+rustup default nightly
+sudo apt install ninja-build
+sudo apt install libatlas-base-dev
+# not installing setuptools-rust
+mkdir envs
+cd envs
+python3 -m venv qiskit
+source qiskit/bin/activate
+source $HOME/.cargo/env
+pip install cmake
+pip install cython
+pip install numpy
+pip install pyscf==1.4.5
+pip install qiskit-terra
+pip install qiskit-aer
+pip install qiskit-aqua
+pip install qiskit-ignis
+pip install qiskit-ibmq-provider
+pip install qiskit
