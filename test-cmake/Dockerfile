@@ -10,4 +10,5 @@ RUN pip --no-cache-dir install scikit-build
 
 RUN pip --no-cache-dir install wheel
 
-RUN pip --no-cache-dir install cmake==3.15.3.post1
+# RUN pip --no-cache-dir install cmake==3.15.3.post1
+
