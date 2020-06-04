@@ -6,11 +6,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         gfortran \
         libopenblas-dev \
         ninja-build \
-        libatlas-base-dev \
-        libhdf5-dev \
-        cmake
-
-# cmake pip package seems to need cmake binary to build
+        libatlas-base-dev
 
 RUN  apt-get clean && \
         rm -rf /var/lib/apt/lists/*
@@ -26,13 +22,7 @@ RUN tar -xvzf rust-nightly-armv7-unknown-linux-gnueabihf.tar.gz
 
 RUN ./rust-nightly-armv7-unknown-linux-gnueabihf/install.sh
 
-RUN rm rust-nightly-armv7-unknown-linux-gnueabihf.tar.gz
-
-RUN rm -rf rust-nightly-armv7-unknown-linux-gnueabihf
-
 RUN pip --no-cache-dir install retworkx
-
-# maybe uninstall rust after retworkx installed?
 
 RUN pip --no-cache-dir install \
         cython numpy
@@ -58,9 +48,10 @@ RUN pip --no-cache-dir install \
 RUN pip --no-cache-dir install \
         qiskit-ibmq-provider
 
+RUN apt-get update && apt-get install -y --no-install-recommends cmake
+
 RUN pip --no-cache-dir install \
         cmake
-
 
 RUN pip --no-cache-dir install \
         qiskit-aer
