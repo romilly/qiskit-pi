@@ -28,6 +28,12 @@ so you can repeat it if you prefer.
 I've had to pin an old build of pyscf (1.4.5) in both builds as the current version does not build on pywheels
 and I cannot get it to install locally. This may mean that some of the packages in quiskit-aqua are broken.
 
+## License
+
+Both qiskit and this work are covered by the Apache License 2.0
+
+You can find [qiskit on GitHib](https://github.com/Qiskit/qiskit)
+
 ## Example
 
 ![screenshot](img/docker-pi.png)
