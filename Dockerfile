@@ -31,7 +31,12 @@ RUN pip --no-cache-dir install \
         matplotlib ipykernel jupyter
 
 RUN pip --no-cache-dir install \
-        cython numpy scikit-build h5py cmake
+        cython numpy scikit-build h5py
+
+# need scikit-build beofre cmake will install
+
+RUN pip --no-cache-dir install \
+        cmake
 
 # pyscf pinned, as I cannot get pip to install later versions
 
