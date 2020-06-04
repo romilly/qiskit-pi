@@ -7,15 +7,15 @@ It's a work in progress but as of this commit I can build a container with jupyt
 
 It needs tidying up and much more testing but it's a good start.
 
-Once I've done more testing I will publish the pre-built container.
-
+Building the container currently takes several hours on an 8 GB Pi and it is bigger than it needs to be.
+Once I've done tidying and testing I will publish a pre-built container.
 
 
 ## Alternatives!
 
 You may prefer to install qiskit on the Pi in a virtual environment.
 
-As of 1 June the installation takes under an hour and a half on an 8GB Pi 4 running Raspberry Pi OS.
+As of 1 June 2020 the installation took under an hour and a half on an 8GB Pi 4 running Raspberry Pi OS.
 
 It requires you to install the rust nightly build, so it takes up a fair amount of space.
 I believe you can uninstall rust after pip has installed `retowrkx`.
