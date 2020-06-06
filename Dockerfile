@@ -33,7 +33,7 @@ RUN pip --no-cache-dir install \
 RUN pip --no-cache-dir install \
         cython numpy scikit-build h5py
 
-# need scikit-build beofre cmake will install
+# need scikit-build before cmake will install
 
 RUN pip --no-cache-dir install \
         cmake
